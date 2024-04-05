@@ -24,25 +24,105 @@
 
         <main>
             <section>
-                <h1>Entre em contato conosco</h1>
-                <h2>Email:</h2>
-                <h4>steveharrisoficial@gmail.com</h4>
-                <h2>Telefone</h2>
-                <h4>+1 408 876 1423.</h4>
-                <h2><a href="https://www.instagram.com/steveharrisofficial/">Instagram</a></h2>        
-                <h2>Deixe sua mensagem que entraremos em contato</h2>
                 <form>
-                    Escreva seu Nome completo: <input type="text" placeholder="Nome..."></br>
-                    Email: <input type="email" placeholder="contato@gmail.com"></br>
-                    Telefone: <input type="tel">
+                    <fieldset>
+                        <legend>Informações pessoais</legend>
+
+                        <label>Escreva seu Nome completo</label>
+                        <br>
+                        <input type="text" name="nome" placeholder="Nome...">
+                        <br><br>
+
+                        <label>Email</label> 
+                        <br>
+                        <input type="email" name="email" placeholder="contato@gmail.com">
+                        <br><br>
+
+                        <label>Telefone</label>
+                        <br>
+                        <input type="tel" name="telefone">
+                        <br><br>
+
+                        <label>Idade</label> 
+                        <br>
+                        <input type="number" name="idade">
+                        <br><br>
+
+                        <label>Data de Nascimento</label> 
+                        <br>
+                        <input type="date" name="data">
+                        <br><br>
+                    </fieldset>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        
+                        Gênero musical que tem preferência
+                        <br>
+                        <select>
+                            <option value="rock_alternativo">Rock alternativo</option>
+                            <option value="heavymetal">Heavy metal</option>
+                            <option value="hard_rock">Hard rock</option>
+                            <option value="punk">Punk</option>
+                            <option value="rock_progressivo">Rock progressivo</option>
+                            <option value="rockability">Rockability</option>
+                            <option value="rock_psicodelico">Rock psicodélico</option>
+                            <option value="blues_rock">Blues rock</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                        <br>
+
+                        Intrumento musical que tem preferência
+                        <br>
+                        <input type="checkbox" name="guitarra" value="Guitarra">Guitarra
+                        <br>
+                        <input type="checkbox" name="guitarra" id="guitarra">Violão
+                        <br>
+                        <input type="checkbox" name="contrabaixo" id="contrabaixo">Contrabaixo
+                        <br>
+                        <input type="checkbox" name="bateria" id="bateria">Bateria
+                        <br>
+                        <input type="checkbox" name="teclado" id="teclado">Teclado
+                        <br>
+                        <input type="checkbox" name="Piano" id="Piano">Piano
+                        <br>
+                        <input type="checkbox" name="Outros" id="Outros">Outros
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Biografia</legend>
+                        <label>Escreva uma breve biografia sua</label>
+                        <br>
+                        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                        <br><br>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Foto</legend>
+                        <label>Adicione uma foto sua</label>
+                        <input type="file" name="foto" value="foto">
+
+                    </fieldset>
+                    <br><br>
+                    <center>
+                        <input type="submit" value="Enviar">
+                    </center>
+
 
                 </form>
             </section>
-            
         </main>
 
+        <hr>
+
         <footer>
-            <p>Copyright. Todos os direitos reservados 2024</p>
+            <center>
+                <p>Copyright. Todos os direitos reservados 2024</p>
+            </center>
         </footer>
         
     </body>
